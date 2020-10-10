@@ -1,0 +1,231 @@
+#mainHeading{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1em;
+    
+}
+#subHeading{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 1em;
+
+}
+#whichMode{
+  font-family: 'Montserrat', sans-serif;
+}
+#subHeadingShadow{
+  text-shadow: 11px 14px 13px rgba(150, 150, 150, .72);
+}
+#mainContainer{
+  padding-top: 3em;;
+}
+#shades, #modes, #intensity{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: .1em;
+    color:#AC6CFF;
+
+} 
+#addNewDevice{
+  float:right !important;
+}
+
+#toggleButton{
+  float:right !important;
+  
+}
+.slider{
+  -webkit-box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+  box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75); 
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 21px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    right:4px;
+    top:4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 60px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #arc-slider {
+    height: 110px !important;
+    width: 500px !important;
+    overflow: hidden;
+    padding: 15px;
+}
+#arc-slider .rs-container {
+    margin-left: -350px; /* here 350 is the radius value */
+    left: 50%;
+}
+#arc-slider .rs-tooltip {
+    top: 60px;
+}
+#arc-slider .rs-tooltip-text {
+    font-size: 25px;
+}
+#arc-slider .rs-border{
+    border-width: 0px;
+}
+
+/* Appearance related changes */
+.rs-control .rs-range-color {
+    background-color: blue;
+}
+.rs-control .rs-path-color {
+    background-color: #5f5f5f;
+}
+.rs-control .rs-handle {
+    background-color:black;
+}
+
+.box {
+  height: 45px;
+  width: 45px;
+  margin-bottom: 15px;
+
+}
+.one{
+  background-color: #FF4563;
+  transition: transform .2s; /* Animation */
+  padding: 0.5em 0.5em;
+}
+
+.two{
+  background-color: #8245E6;
+  transition: transform .2s; /* Animation */
+  padding: 0.5em 0.5em;
+}
+.three{
+  background-color: #4AC0E0;
+  transition: transform .2s; /* Animation */
+  padding: 0.5em 0.5em;
+}
+.four{
+  background-color: #1089EB;
+  transition: transform .2s; /* Animation */
+  padding: 0.5em 0.5em;
+}
+.five{
+  background-color:#C791CD;
+  transition: transform .2s; /* Animation */
+  padding: 0.5em 0.5em;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover{
+  transform: scale(1.3); /* (130% zoom ) */
+  content: url("../../assets/tick-wh.png");
+}
+.add{
+  background-color: #A3F8FF;
+  padding-left: 8px;
+  padding-top: 7px;
+}
+hr.dotted {
+  border-top: 2px dotted #AC6CFF;
+  padding-bottom: 3px;
+}
+#colorPallette{
+  padding-top: 2%;
+  padding-left: 10px;
+  
+}
+#colorPalletteBox{
+  -webkit-box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+  box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+}
+/* #colorPalletteBox::after{
+  content: url("../../assets/tick-wh.png");
+  
+} */
+.mybtn{
+  margin-top: 1em;
+  background-attachment: white;
+  
+}
+
+.active, .mybtn:hover{
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(161,14,223,1) 0%, rgba(41,144,186,1) 100%, rgba(7,7,106,1) 100%);
+  -webkit-box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: -8px 10px 15px -4px rgba(0,0,0,0.75);
+}
+
+/* #day:hover {
+  background-image: url('../../assets/morning-wh.png');
+} */
+
+#arc-slider {
+  height: 150px !important;
+  width: 250px !important;
+  overflow: hidden;
+  padding: 15px;
+}
+
+#arc-slider .rs-tooltip-text {
+  font-size: 25px !important ;
+}
+
+
+.rs-control .rs-range-color {
+ background-color: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%) ; 
+
+}
+.rs-control .rs-path-color {
+  background-color: #15ad55;
+}
+.rs-control .rs-handle {
+  background-color:  linear-gradient(to top left, #33ccff 0%, #ff99cc 100%) ; 
+}
+
+/* testing*/
